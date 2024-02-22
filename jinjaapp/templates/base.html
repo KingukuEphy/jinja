@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} My website {% endblock %}</title>
+</head>
+<body>
+
+<header>
+    <h1>{% block header %} Welcome to my website {% endblock %}</h1>
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a href="{% url 'gallery' %}">GALLERY</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    {%block content%}{%endblock%}
+</main>
+<footer>
+    <p>&copy; 2024 eMobilis </p>
+</footer>
+
+</body>
+</html>
